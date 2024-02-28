@@ -106,3 +106,37 @@ a {
     color-scheme: dark;
   }
 }
+
+.mt-8{
+  margin-top: 8px;
+}
+.mt-16{
+  margin-top: 16px;
+}
+.mt-32{
+  margin-top: 32px;
+}
+.pt-8{
+  padding-top: 8px;
+}
+.pt-16{
+  padding-top: 16px;
+}
+.pt-32{
+  padding-top: 32px;
+}
+.pd-16{
+  padding: 16px;
+}
+.pd-8{
+  padding: 16px;
+}
+
+.pd-h-8{
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.pd-h-16{
+  padding-left: 16px;
+  padding-right: 16px;
+}
