@@ -1,3 +1,4 @@
+import { ButtonBase } from "@mui/material";
 import styled from "styled-components";
 
 interface ItemProps {
@@ -15,7 +16,7 @@ export const CarrousselContainer = styled.div`
   }
 `;
 
-export const Item = styled.p<ItemProps>`
+export const Item = styled(ButtonBase)<ItemProps>`
   background-color: ${(props) => (props.active ? "#ef2a39" : "#F3F4F6")};
   color: ${(props) => (props.active ? "#f5f5f5" : "#6A6A6A")};
   font-family: "Poppins", sans-serif;

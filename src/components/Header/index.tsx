@@ -18,7 +18,7 @@ export const Header = ({className }: HeaderProps) => {
                     <Image
                         layout="fill"
                         objectFit="cover"
-                        src="https://avatars.githubusercontent.com/u/82860253?s=96&v=4" // Caminho relativo à pasta public
+                        src="https://i.pinimg.com/564x/4c/20/2b/4c202b6376037a5fc660a6c7b6e55661.jpg" // Caminho relativo à pasta public
                         alt="Descrição da imagem"
                         priority
               

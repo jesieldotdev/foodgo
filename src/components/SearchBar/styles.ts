@@ -10,16 +10,16 @@ export const SearchBarContainer = styled.div`
     min-height: 24px;
     max-width: 24px;
     max-height: 24px;
+    margin-right: 16px;
   }
 `;
 
 export const SearchInput = styled(InputBase)`
   display: flex;
   align-items: center;
-  padding: 8px;
-  padding-right: 16px;
+  padding: 8px 16px;
   color: #3c2f2f;
-  border-radius: 16px;
+  border-radius: 32px;
   background-color: #f5f5f5;
   width: 100%;
 `;

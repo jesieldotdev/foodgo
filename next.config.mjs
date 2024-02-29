@@ -5,8 +5,8 @@ const nextConfig = {
     styledComponents: true,
   },
   images: {
-    domains: ["avatars.githubusercontent.com"],
-  },
+    domains: ["avatars.githubusercontent.com", "i.pinimg.com"],
+  }
 };
 
 export default nextConfig;

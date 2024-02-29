@@ -12,7 +12,7 @@ export const SearchBar = ({ className }: SearchBarProps) => {
         <S.SearchBarContainer className={className}>
 
             <S.SearchInput
-                startAdornment={<SearchOutline className='icon' />}
+                startAdornment={<SearchOutline  className='icon' />}
                 placeholder="Pesquisar..."
             />
             <S.FilterButton>
