@@ -62,6 +62,7 @@ export default function SimpleBottomNavigation({ className }: BottomNavigationPr
             }}
         >
 
+
             {
                 items.map(item => <BottomNavigationAction
                     key={item.value}

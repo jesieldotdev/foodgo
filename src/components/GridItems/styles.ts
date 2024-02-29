@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const GridItemsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 8px;
+  gap: 32px 24px;
 
   .star,
   .heart {
