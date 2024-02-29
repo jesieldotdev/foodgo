@@ -62,7 +62,11 @@ export const Title = styled.p`
 `;
 export const Subtitle = styled.p`
   text-align: left;
-
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
   width: 100%;
   font-weight: 400;
 `;
