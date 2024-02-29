@@ -11,7 +11,7 @@ export const BottomNavContainer = styled(BottomNavigation)`
   width: 100%;
   max-width: 500px;
   margin: 0 auto;
-  background-color: #EF2A39;
+  background-color: #ef2a39;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
@@ -19,7 +19,7 @@ export const BottomNavContainer = styled(BottomNavigation)`
   height: max-content;
 
   gap: 16px;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 12px;
   .root {
     height: 100%;
@@ -51,14 +51,35 @@ export const BottomNavContainer = styled(BottomNavigation)`
   }
 `;
 
-
 export const FloatingActionButton = styled(IconButton)`
+  padding: 24px;
+  background: #ef2a39;
+  border-radius: 50%;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  transform: translate(-16%, -16%);
+
+  &:hover {
+    background: #ef2a39;
+  }
+`;
+
+export const FloatActionContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #fff;
   position: absolute;
   bottom: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -8%);
   z-index: 1;
-`
+  filter: box-shadow(0px 4px 8px rgba(0, 0, 0, 0.1));
+
+`;
 
 // export const FloatingActionButton = styled(BottomNavigationAction)(({ theme }) => ({
 //   position: 'absolute',

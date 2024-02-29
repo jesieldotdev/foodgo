@@ -1,20 +1,11 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
 import * as S from './styles'
-import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
-import { Favorite, LocationOn, RecentActors, Restore } from 'styled-icons/material';
-import { PersonCircle } from '@styled-icons/bootstrap/PersonCircle';
-import { HomeOutline } from '@styled-icons/evaicons-outline/HomeOutline';
-import { FavoriteBorder } from '@styled-icons/material/FavoriteBorder';
-import { PersonCircle as PersonCircleV2 } from '@styled-icons/fluentui-system-filled/PersonCircle';
-import { IconButton } from '@mui/material';
-import { PlusLg } from 'styled-icons/bootstrap';
 import Home from '../../../public/icons/fi-br-home.svg'
 import User from '../../../public/icons/fi-br-user.svg'
 import Comment from '../../../public/icons/fi-br-comment.svg'
 import Heart from '../../../public/icons/fi-sr-heart.svg'
-import Image from 'next/image';
+import Plus from '../../../public/icons/Group 17.svg'
 interface BottomNavigationProps {
     className?: string
 }
@@ -24,10 +15,6 @@ interface NavItem {
     title: string
     icon: React.JSX.Element
     icon_on: React.JSX.Element
-}
-
-const navItemStyles = {
-    fontFamily: 'Poppins'
 }
 
 export default function SimpleBottomNavigation({ className }: BottomNavigationProps) {
@@ -69,19 +56,21 @@ export default function SimpleBottomNavigation({ className }: BottomNavigationPr
                 setValue(newValue);
             }}
         >
-          
+
             {
                 items.map(item => <BottomNavigationAction
                     key={item.value}
                     classes={{ label: 'custom_label', selected: 'on', root: 'root' }}
                     label={item.title}
                     disableRipple
-                    icon={<div className='item'>{item.icon_on}</div> } />
+                    icon={<div className='item'>{item.icon_on}</div>} />
                 )}
 
-            <S.FloatingActionButton
-
-            ><PlusLg size={24} /></S.FloatingActionButton>
+            <S.FloatActionContainer>asd
+                <S.FloatingActionButton>
+                    <Plus size={24} />
+                </S.FloatingActionButton>
+            </S.FloatActionContainer>
         </S.BottomNavContainer>
         // </Box>
     );
