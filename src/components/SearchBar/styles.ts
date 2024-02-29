@@ -30,7 +30,7 @@ export const FilterButton = styled(IconButton)`
   width: 64px;
   height: 64px;
   margin-left: 8px;
-  :hover {
+  &:hover {
     background-color: #ef2a39;
   }
 `;

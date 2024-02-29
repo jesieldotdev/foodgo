@@ -1,3 +1,4 @@
+import { ButtonBase } from "@mui/material";
 import Image from "next/image";
 import styled from "styled-components";
 
@@ -29,7 +30,7 @@ export const Message = styled.p`
   color: #6a6a6a;
 `;
 
-export const AvatarContainer = styled.div`
+export const AvatarContainer = styled(ButtonBase)`
   position: relative;
   border-radius: 8px;
   overflow: hidden;
