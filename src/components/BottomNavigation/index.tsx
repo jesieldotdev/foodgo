@@ -6,13 +6,15 @@ import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import { Favorite, LocationOn, RecentActors, Restore } from 'styled-icons/material';
 import { PersonCircle } from '@styled-icons/bootstrap/PersonCircle';
 import { HomeOutline } from '@styled-icons/evaicons-outline/HomeOutline';
-import { Home } from '@styled-icons/fluentui-system-filled/Home';
 import { FavoriteBorder } from '@styled-icons/material/FavoriteBorder';
 import { PersonCircle as PersonCircleV2 } from '@styled-icons/fluentui-system-filled/PersonCircle';
 import { IconButton } from '@mui/material';
 import { PlusLg } from 'styled-icons/bootstrap';
-import { User } from 'styled-icons/boxicons-regular';
-
+import Home from '../../../public/icons/fi-br-home.svg'
+import User from '../../../public/icons/fi-br-user.svg'
+import Comment from '../../../public/icons/fi-br-comment.svg'
+import Heart from '../../../public/icons/fi-sr-heart.svg'
+import Image from 'next/image';
 interface BottomNavigationProps {
     className?: string
 }
@@ -34,21 +36,27 @@ export default function SimpleBottomNavigation({ className }: BottomNavigationPr
     const items: NavItem[] = [
         {
             value: 0,
-            title: 'Receitas',
-            icon: <HomeOutline className='icon' />,
+            title: 'Home',
+            icon: <Home className='icon' />,
             icon_on: <Home className='icon on' />,
         },
         {
             value: 1,
-            title: 'Favoritos',
-            icon: <FavoriteBorder className='icon' />,
-            icon_on: <Favorite className='icon on' />,
+            title: 'User',
+            icon: <User className='icon' />,
+            icon_on: <User className='icon on' />,
         },
         {
             value: 2,
-            title: 'Perfil',
-            icon: <PersonCircle className='icon' />,
-            icon_on: <PersonCircleV2 className='icon on' />,
+            title: 'Comment',
+            icon: <Comment className='icon' />,
+            icon_on: <Comment className='icon on' />,
+        },
+        {
+            value: 3,
+            title: 'Favorites',
+            icon: <Heart className='icon' />,
+            icon_on: <Heart className='icon on' />,
         },
     ]
 
@@ -61,15 +69,14 @@ export default function SimpleBottomNavigation({ className }: BottomNavigationPr
                 setValue(newValue);
             }}
         >
-
-
+          
             {
                 items.map(item => <BottomNavigationAction
                     key={item.value}
                     classes={{ label: 'custom_label', selected: 'on', root: 'root' }}
                     label={item.title}
                     disableRipple
-                    icon={value === item.value ? <div className='item'>{item.icon_on}</div> : <div>{item.icon}</div>} />
+                    icon={<div className='item'>{item.icon_on}</div> } />
                 )}
 
             <S.FloatingActionButton

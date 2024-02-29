@@ -1,24 +1,20 @@
-// next.config.mjs
-import withPlugins from 'next-compose-plugins';
-import withSvgr from '@svgr/webpack';
-
+/** @type {import('next').NextConfig} */
 const nextConfig = {
- reactStrictMode: true,
- compiler: {
+  reactStrictMode: true,
+  compiler: {
     styledComponents: true,
- },
- images: {
+  },
+  images: {
     domains: ["avatars.githubusercontent.com", "i.pinimg.com"],
- },
+  },
+  webpack: (config, options) => {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ['@svgr/webpack'],
+    });
+
+    return config;
+  },
 };
 
-export default withPlugins([
- [withSvgr, {
-    svgoConfig: {
-      plugins: [
-        { removeViewBox: false },
-      ],
-    },
- }],
- nextConfig,
-]);
+export default nextConfig;
