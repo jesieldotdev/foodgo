@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { ProductHeader } from './components/Header'
 import * as S from './styles'
 import { Summary } from './components/Summary'
+import { BottomItems } from './components/BottomItems'
 
 interface ProductViewProps {
 
@@ -20,6 +21,7 @@ export const ProductView = ({ }: ProductViewProps) => {
                 />
             </S.ImageContainer>
             <Summary className='pd-16' />
+            <BottomItems className='pd-16' />
 
         </S.ProductViewContainer>
     )
