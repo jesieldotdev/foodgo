@@ -16,7 +16,7 @@ export const Summary = ({ className }: SummaryProps) => {
                 <S.DeliveryTime>-  26 min</S.DeliveryTime>
             </S.SubHeader>
             <S.Description>
-                The Cheeseburger Wendys Burger is a classic fast food burger that packs a punch of flavor in every bite. Made with a juicy beef patty cooked to perfection, it's topped with melted American cheese, crispy lettuce, ripe tomato, and crunchy pickles.
+                The Cheeseburger Wendys Burger is a classic fast food burger that packs a punch of flavor in every bite. Made with a juicy beef patty cooked to perfection, its topped with melted American cheese, crispy lettuce, ripe tomato, and crunchy pickles.
             </S.Description>
         </S.SummaryContainer>
     )
