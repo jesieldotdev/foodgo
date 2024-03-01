@@ -66,12 +66,12 @@ export default function SimpleBottomNavigation({ className }: BottomNavigationPr
                     icon={<div className='item'>{item.icon_on}</div>} />
                 )}
 
-            <S.FloatActionContainer>asd
+            {/* <S.FloatActionContainer>
                 <S.FloatingActionButton>
                     <Plus size={24} />
                 </S.FloatingActionButton>
-            </S.FloatActionContainer>
-        </S.BottomNavContainer>
+            </S.FloatActionContainer> ) */}
+        </S.BottomNavContainer> 
         // </Box>
     );
 }
