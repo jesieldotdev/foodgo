@@ -3,7 +3,8 @@ import styled from "styled-components";
 
 export const PortionContainer = styled.div`
   width: 100%;
-  width: 160px;
+  width: 140px;
+  user-select: none;
 
   .icon {
     fill: #fff;

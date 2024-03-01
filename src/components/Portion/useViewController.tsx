@@ -1,37 +1,30 @@
 import { useReducer } from "react";
 
-// Define o tipo para o estado
 interface PortionState {
     count: number;
 }
 
-// Define o tipo para as ações
 type PortionAction = { type: 'add' | 'remove' };
 
-// Define o tipo para a função reducer
 type PortionReducer = (state: PortionState, action: PortionAction) => PortionState;
 
-interface PortionViewControllerProps { }
-
-// Use a função usePortionViewController
 export const usePortionViewController = () => {
-    // Define a função reducer
     const reducer: PortionReducer = (state, action) => {
         if (action.type === 'add') {
             return {
                 ...state,
-                count: state.count + 1 // corrigindo a atualização do contador
+                count: state.count++
             };
         } else if (action.type === 'remove') {
+            if(state.count === 0) return state
             return {
                 ...state,
-                count: state.count - 1
+                count: state.count--
             }
         }
         throw new Error('Unknown action');
     };
 
-    // Utiliza o useReducer com a função reducer e o estado inicial
     const [state, dispatch] = useReducer(reducer, { count: 0 });
 
     return { state, dispatch };

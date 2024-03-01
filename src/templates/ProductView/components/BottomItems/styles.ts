@@ -23,7 +23,7 @@ export const OrderButton = styled(ButtonBase)`
   font-family: "Poppins", sans-serif;
 `;
 
-export const Price = styled.div`
+export const Price = styled(ButtonBase)`
   background-color: #ef2a39;
   font-family: "Poppins", sans-serif;
   align-items: center;
