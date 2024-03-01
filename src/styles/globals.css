@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -101,42 +101,47 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   html {
-    color-scheme: dark;
+    color-scheme: light;
   }
 }
 
-.mt-8{
-  margin-top: 8px;
-}
-.mt-16{
-  margin-top: 16px;
-}
-.mt-32{
-  margin-top: 32px;
-}
-.pt-8{
-  padding-top: 8px;
-}
-.pt-16{
-  padding-top: 16px;
-}
-.pt-32{
-  padding-top: 32px;
-}
-.pd-16{
-  padding: 16px;
-}
-.pd-8{
-  padding: 16px;
+p {
+  color: #3c2f2f;
+  font-family: 'Poppins', sans-serif;
 }
 
-.pd-h-8{
+.mt-8 {
+  margin-top: 8px;
+}
+.mt-16 {
+  margin-top: 16px;
+}
+.mt-32 {
+  margin-top: 32px;
+}
+.pt-8 {
+  padding-top: 8px;
+}
+.pt-16 {
+  padding-top: 16px;
+}
+.pt-32 {
+  padding-top: 32px;
+}
+.pd-16 {
+  padding: 16px;
+}
+.pd-8 {
+  padding: 8px;
+}
+
+.pd-h-8 {
   padding-left: 8px;
   padding-right: 8px;
 }
-.pd-h-16{
+.pd-h-16 {
   padding-left: 16px;
   padding-right: 16px;
 }
