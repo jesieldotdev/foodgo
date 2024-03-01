@@ -5,12 +5,15 @@ import { FavoriteBorder } from '@styled-icons/material/FavoriteBorder'
 import { Favorite } from '@styled-icons/material/Favorite'
 import { ProductView } from '@/models/General'
 import { IconButton } from '@mui/material'
+import { useRouter } from 'next/router'
 
 interface GridItemsProps {
     className?: string
 }
 
 export const GridItems = ({ className }: GridItemsProps) => {
+
+    const router = useRouter()
 
     const hamburgers: ProductView[] = [
         {
@@ -48,7 +51,7 @@ export const GridItems = ({ className }: GridItemsProps) => {
 
             {
                 hamburgers.map(item =>
-                    <S.Card key={item.id}>
+                    <S.Card onClick={()=> router.push('/product')} key={item.id}>
                         <S.ImageContainer>
                             <Image
                                 layout="fill"
