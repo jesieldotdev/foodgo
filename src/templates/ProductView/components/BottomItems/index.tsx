@@ -9,8 +9,16 @@ interface BottomItemsProps {
 export const BottomItems = ({ className }: BottomItemsProps) => {
     return (
         <S.BottomItemsContainer className={className}>
-            <SliderSpicy />
-            <Portion />
+
+            <S.FlexRow>
+                <SliderSpicy />
+                <Portion />
+            </S.FlexRow>
+            <S.FlexRow className='mt-32'>
+                <S.Price>$8.24</S.Price>
+                <S.OrderButton>Order Now</S.OrderButton>
+            </S.FlexRow>
+
         </S.BottomItemsContainer>
     )
 }
