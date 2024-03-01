@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { ProductHeader } from './components/Header'
+import { ProductHeader } from '../../components/ProductHeader/index'
 import * as S from './styles'
 import { Summary } from './components/Summary'
 import { BottomItems } from './components/BottomItems'
