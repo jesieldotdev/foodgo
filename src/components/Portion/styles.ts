@@ -30,7 +30,9 @@ export const Controls = styled.div`
 export const Button = styled(IconButton)`
   background-color: #ef2a39;
   border-radius: 8px;
-  padding: 12px;
+  /* padding: 12px; */
+  width: 40px;
+  height: 40px;
   &:hover {
     background-color: #ef2a39;
   }
