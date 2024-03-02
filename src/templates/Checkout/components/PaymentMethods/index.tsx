@@ -1,5 +1,6 @@
 import * as S from './styles'
-import Brand from '../../../../../public/icons/brand.svg'
+import MasterCard from '../../../../../public/icons/brand.svg'
+import Visa from '../../../../../public/icons/pngwing 27.svg'
 import On from '../../../../../public/icons/Group 51.svg'
 import Off from '../../../../../public/icons/Group 51 (1).svg'
 import { usePaymentMethodsViewController } from './useViewController'
@@ -21,7 +22,7 @@ export const PaymentMethods = ({ className }: PaymentMethodsProps) => {
                     className='mt-16'
                     onClick={() => handleCardClick(payment.id)}
                 >
-                    <Brand />
+                    {payment.brand === 'VISA' ? <Visa /> : <MasterCard />}
                     <S.Info>
                         <S.Label active={payment.id === selectedPayment}>{payment.label}</S.Label>
                         <S.Value>{payment.serial}</S.Value>

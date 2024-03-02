@@ -11,4 +11,5 @@ export interface PaymentMethodsProps{
     id: number
     label: string
     serial: string
+    brand: 'MASTER_CARD'|'VISA'
 }
