@@ -6,3 +6,9 @@ export interface ProductView{
     rating: number
     saved: boolean
 }
+
+export interface PaymentMethodsProps{
+    id: number
+    label: string
+    serial: string
+}
