@@ -13,13 +13,13 @@ export const usePortionViewController = () => {
         if (action.type === 'add') {
             return {
                 ...state,
-                count: state.count++
+                count: state.count + 1
             };
         } else if (action.type === 'remove') {
             if(state.count === 0) return state
             return {
                 ...state,
-                count: state.count--
+                count: state.count - 1
             }
         }
         throw new Error('Unknown action');
